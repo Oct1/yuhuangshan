@@ -121,7 +121,7 @@ ul {
 
 .slideBox {
   margin:0 auto;
-  width:1660px;
+  width:100%;
   height:900px;
   position:relative;
   overflow:hidden;
@@ -247,18 +247,19 @@ ul {
 /* 产业特色主体 */
 .mainSpecial {
 	width: 100%;
-	height: 664px;
+	height: 600px;
 	display: flex;
 }
 
 .mainSpecial > div {
-	width:  332px;
-	height: 664px;
+	width:  20%;
+	height: 600px;
 	background-color: yellowgreen;
+
 }
 
 .special{
-	width:  332px;
+	width:  100%;
 	height: 50%;
 	border: none;
 	position: relative;
@@ -296,11 +297,11 @@ ul {
 }
 
 .specialImg {
-
+	overflow: hidden;
 }
 
 .specialImg{
-	width:  332px;
+	width:  100%;
 	height: 50%;
 	border: none;
 	overflow: hidden;
@@ -396,7 +397,7 @@ ul {
 }
 
 .mainView {
-	width: 1160px;
+	width: 80%;
 	height: 810px;
 	margin: 0 auto;
 	background-color: honeydew;
@@ -512,12 +513,64 @@ ul {
 	background-color: #skyblue;
 }
 
-.partner {
-	height: 300px;
+.firendLink {
+	height: 300px; 	
 	background-color: #d5d5d5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
+
+.firendLinkTitle {
+	width: 1050px;
+	height: 50px;
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	line-height: 24px;
+	color: #e78601;
+}
+
+.link {
+	width: 1050px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.link li {
+	margin:5px 5px;
+}
+
+.link li > img {
+	width: 130px;
+	height: 50px;
+}
+
 
 .information {
 	height: 370px;
-	background-color: #d5d5a2;
+	background-color: #313131;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.companyInfo .Info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.companyInfo .Info li > a{
+	width: 570px;
+	height: 17px;
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	line-height: 36px;
+	color: #ffffff;
+	text-decoration:none;
+}
+
+.companyInfo .Info li{
+	padding: 0 20px;
 }

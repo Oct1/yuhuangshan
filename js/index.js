@@ -1,5 +1,7 @@
 $(function(){
-  // 导航
+  /**
+   * 导航
+   */
   let navBox = $(".nav");
   let navNumber = navBox.find("li"); 
   navNumber.hover(function() {
@@ -9,8 +11,21 @@ $(function(){
     $(this).children('a').removeClass('navActive');
   });
 
-	// 轮播图 
-	let slideBox = $(".slideBox");
+	/**
+   *轮播图
+   */
+  
+  //浏览器窗口大小变化时
+  $(window).resize(function() {
+    var window_width = $(window).width();//获取浏览器窗口宽度
+    console.log(window_width)
+    $('.slideBox').children('ul').width(window_width*3+'px');
+    console.log($('.slideBox').children('ul').width())
+    $('.slideBox').children('ul').find('li').width(window_width+'px');
+    console.log($('.slideBox').children('ul').find('li').width()) 
+  });
+
+  let slideBox = $(".slideBox");
   let ul = slideBox.find("ul");
   let oneWidth = slideBox.find("ul li").eq(0).width();
   let number = slideBox.find(".spanBox span");            //注意分号 和逗号的用法
@@ -42,8 +57,11 @@ $(function(){
       number.eq(sw).trigger("click");
   },5000);
 
-  //产业特色
-  let special = $(".mainContent");
+
+  /**
+   * 产业特色
+   */
+  let special = $(".mainSpecial");
   let specialList = special.children('div'); 
   specialList.hover(function() {
     console.log("经过")
