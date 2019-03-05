@@ -11,7 +11,7 @@ $(function(){
     $(this).children('a').removeClass('navActive');
   });
 
-	/**
+  /**
    *轮播图
    */
   resizeWin()
@@ -41,7 +41,7 @@ $(function(){
       $(this).addClass("active").siblings("span").removeClass("active");
       sw=$(this).index();
       ul.animate({
-            "right":$(window).width()*sw,    //ul标签的动画为向左移动；
+            "right":$(".slideBox").children('ul').find('li').width()*sw,    //ul标签的动画为向左移动；
       });
     });
     //左右按钮的控制效果

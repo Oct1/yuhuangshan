@@ -556,7 +556,7 @@ ul {
 /* 网站信息 */
 
 .information {
-	height: 370px;
+	height: 360px;
 	background-color: #313131;
 	position: relative;
 	left: 0px;
@@ -566,6 +566,7 @@ ul {
 .companyInfo{
 	width: 50%;
 	position: absolute;
+
 
 }
 
@@ -616,7 +617,7 @@ ul {
 
 .Info1 li h3{
 	height: 20px;
-	font-family: PFDinTextCondPro-Regular;
+	font-family: cursive;
 	font-size: 29px;
 	line-height: 24px;
 	letter-spacing: 1px;
