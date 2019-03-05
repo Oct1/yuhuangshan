@@ -10,3 +10,8 @@
 
 ------------------------------------------
 玉皇山南基金小镇首页html制作	
+
+
+####浏览器同步
+	-npm install -g browser-sync
+	-browser-sync start --server --files "css/*.css，js.*/js,*.html"
