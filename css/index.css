@@ -1,19 +1,17 @@
-
 html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h3, h4, h5, h6, form, table, tr, td, textarea, i, button, em {
     margin:0;
     padding:0;
     border:0;
 }
 
-/* 头部css样式 */
-.header {
+.header{
 	width:100%;
 }
 
-
 .headerTop {
 	width:100%;
-	height: 175px;
+	height:0;
+	padding-bottom: 15%;
 	background: url(../images/header/bg.png) no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
@@ -23,30 +21,33 @@ html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h
 
 /* logo */
 .logo {
-	width:  140px;
-	height: 158px;
+	width:  10%;
 	margin: 0 auto;
 	line-height: 158px;
 }
 .logo img {
-	width:  100%;
-	height: 100%;
+	width: 100%;
+	height:100%;
 }
+
 
 /* 小插件 */
 .widgets {
-	width: 300px;
-	height: 48px;
+	width: 20%;
+	height: 0;
+	padding-bottom: 3%;
 	position: absolute;
-	right: 257px;
+	right: 8%;
 	top: 0;
 	background: yellowgreen;
 	display: flex;
+	min-width: 245px;
 
 }
+
 /* 选择 */
 .topSelect {
-	width: 120px;
+	width: 50%;
 	height: 48px;
 	line-height: 48px;
 	padding-left: 20px;
@@ -62,12 +63,14 @@ html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h
 	line-height: 48px;
 	background: #0859CD;
 	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .search img{
 	width: 20px;
 	height: 20px;
-	margin:0 auto;
 }
 /* 天气 */
 .weather {
@@ -77,6 +80,8 @@ html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h
 	background: #5CC2D7;
 	border: none;
 }
+
+
 /* 导航样式 */ 
 .nav {
 	height: 65px;
@@ -174,7 +179,7 @@ ul {
 /* 轮播图控制按钮 */
 .direction{
 	position: absolute;
-	top: 300px;
+	top: 35%;
   width: 100%;
   display: flex;
   justify-content: space-between;

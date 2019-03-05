@@ -1,4 +1,4 @@
-姓名：李桂喜	
+﻿姓名：李桂喜	
 指导老师：吴叶挺
 
 内容	
@@ -14,4 +14,4 @@
 
 ####浏览器同步
 	-npm install -g browser-sync
-	-browser-sync start --server --files "css/*.css，js.*/js,*.html"
+	-browser-sync start --server --files "css/*.css,js.*/js,*.html"
