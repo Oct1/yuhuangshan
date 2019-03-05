@@ -83,6 +83,7 @@ html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h
 	box-shadow:0 0 10px #cccccc;
 	background: url(../images/header/navBg.png) no-repeat center;
 	background-size: 100% 80%;
+	min-width: 1240px;
 }
 
 
@@ -93,6 +94,7 @@ html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h
 	height:65px;
 	line-height: 65px;
 	justify-content: center;
+	
 }
 
 .nav>ul li{
@@ -122,7 +124,6 @@ ul {
 .slideBox {
   margin:0 auto;
   width:100%;
-  height:900px;
   position:relative;
   overflow:hidden;
   border: none;
@@ -130,15 +131,17 @@ ul {
 
 .slideBox ul {
   position:relative;
-  width:7680px;
-  height: 850px;
+  display: flex
 }
 .slideBox ul li {
   float:left;
-  width:1660px;
-  height:850px;
   position:relative;
+  overflow: hidden
     
+}
+
+.slideBox ul li > img{
+  width: 100%; 
 }
 
 
@@ -170,22 +173,22 @@ ul {
 
 /* 轮播图控制按钮 */
 .direction{
-	width:1660px;
-    height:850px;
+	position: absolute;
+	top: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* 上一张 */
 .prev {
   width: 82px;
 	height: 123px;
-  position:absolute;
-  left:50px;
-  top:320px;
-  float:left;
   background-color: rgba(255,255,255,0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-
+	margin-left: 50px;
 }
 .prev img{
 	width: 20px;
@@ -194,9 +197,6 @@ ul {
 }
 /* 下一张 */
 .next {
-  position:absolute;
-  right:50px;
-  top:320px;
   float:right;
   width: 82px;
 	height: 123px;
@@ -204,6 +204,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 50px;
 }
 
 .next img{
@@ -365,7 +366,6 @@ ul {
 /* 全景虚拟游 */
 
 .qjxny {
-	margin-top: 40px;
 	width: 100%;
 	height: 1072px;
 	position: relative;
@@ -398,19 +398,25 @@ ul {
 
 .mainView {
 	width: 80%;
-	height: 810px;
+	height: 800px;
 	margin: 0 auto;
 	background-color: honeydew;
 	border-radius: 10px;
 	overflow: hidden;
 }
 /* 全景轮播 */
+.spanBox span img{
+	width: 100%;
+}
+
+.slideBox .spanBox .active img{
+  border:solid 1px red;
+}
 
 
 /* 在线预订 */
 
 .zxdg {
-	margin-top: 40px;
 	width: 100%;
 	height: 1072px;
 	position: relative;
@@ -675,4 +681,28 @@ ul {
 	color: #898989;
 	text-decoration:none;
 	margin-bottom: 20px;
+}
+
+.fastChannel {
+	width: 51px;
+	height: 132px;
+	position: fixed;
+	right: 0;
+	bottom: 250px;
+	background: url(../images/index_kstdbg.jpg) no-repeat;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+
+.fastChannel p{
+	display: block;
+	width: 16px;
+	height: 80px;
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	letter-spacing: 2px;
+	color: #ebe6db;
+	margin: 20px auto;
+
 }

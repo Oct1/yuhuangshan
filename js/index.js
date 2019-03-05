@@ -14,50 +14,55 @@ $(function(){
 	/**
    *轮播图
    */
-  
+  resizeWin()
   //浏览器窗口大小变化时
   $(window).resize(function() {
+    resizeWin()
+  });
+
+
+  function resizeWin(){
     var window_width = $(window).width();//获取浏览器窗口宽度
     console.log(window_width)
-    $('.slideBox').children('ul').width(window_width*3+'px');
-    console.log($('.slideBox').children('ul').width())
-    $('.slideBox').children('ul').find('li').width(window_width+'px');
-    console.log($('.slideBox').children('ul').find('li').width()) 
-  });
-
+    $(".slideBox").children('ul').width(window_width*3+'px');
+    $(".slideBox").children('ul').find('li').width(window_width+'px'); 
+    var direWidth = $('.slideBox').children('ul').find('li').children('img').height();
+  }
   let slideBox = $(".slideBox");
   let ul = slideBox.find("ul");
-  let oneWidth = slideBox.find("ul li").eq(0).width();
+  let oneWidth = ul.find("li").width();
   let number = slideBox.find(".spanBox span");            //注意分号 和逗号的用法
   let timer = null;
-  let sw = 0;                    
-  //每个span绑定click事件，完成切换颜色和动画，以及读取参数值
-  number.on("click",function (){
-    $(this).addClass("active").siblings("span").removeClass("active");
-    sw=$(this).index();
-    ul.animate({
-          "right":oneWidth*sw,    //ul标签的动画为向左移动；
-    });
-  });
-  //左右按钮的控制效果
-  $(".next").stop(true,true).click(function (){
-     sw++;
-     if(sw==number.length){sw=0};
-     number.eq(sw).trigger("click");
-  });
-  $(".prev").stop(true,true).click(function (){
-      sw--;
-      if(sw==number.length){sw=0};
-      number.eq(sw).trigger("click");
+  let sw = 0;   
+  slide(number,timer,sw)
+  function slide(number,timer,sw){
+    //每个span绑定click事件，完成切换颜色和动画，以及读取参数值
+    number.on("click",function (){
+      $(this).addClass("active").siblings("span").removeClass("active");
+      sw=$(this).index();
+      ul.animate({
+            "right":$(window).width()*sw,    //ul标签的动画为向左移动；
       });
-  //定时器的使用，自动开始
-  timer = setInterval(function (){
-      sw++;
-      if(sw==number.length){sw=0};
-      number.eq(sw).trigger("click");
-  },5000);
-
-
+    });
+    //左右按钮的控制效果
+    $(".next").stop(true,true).click(function (){
+       sw++;
+       if(sw==number.length){sw=0};
+       number.eq(sw).trigger("click");
+    });
+    $(".prev").stop(true,true).click(function (){
+        sw--;
+        if(sw==number.length){sw=0};
+        number.eq(sw).trigger("click");
+        });
+    //定时器的使用，自动开始
+    timer = setInterval(function (){
+        sw++;
+        if(sw==number.length){sw=0};
+        number.eq(sw).trigger("click");
+    },5000);
+  }              
+  
   /**
    * 产业特色
    */
