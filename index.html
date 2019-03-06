@@ -2,10 +2,12 @@
 <html lang = "en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<!-- 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/> -->
 		<title>玉皇山南基金小镇</title>
 		<link rel="stylesheet" href="./css/index.css">
+		<link rel="stylesheet" href="./dist/css/swiper.min.css">
 		<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+		<script src="./dist/js/swiper.jquery.min.js"></script>
 		<script src = "./js/index.js"></script>
 	</head>
 	<body>
@@ -52,7 +54,6 @@
 			    	<div class="next"><img src="./images/header/right_arrow.png"alt=""/></div>
 			    </div>
 
-			</div>
 		</header>
 		<div class = "main">
 			<!-- 产业特色 -->
@@ -143,25 +144,25 @@
 					</div>
 				</div>
 				<div class = "mainView">
-					<!-- 全景图 -->
-					<div class="slideBox" style = "height:100%">
-					    <ul style = "height:80%">
-						    <li><img style = "height:100%" src="./images/header/slideBox-1.jpg" alt=""/></li>
-						    <li><img style = "height:100%" src="./images/header/slideBox-2.jpg" alt=""/></li>
-						    <li><img style = "height:100%" src="./images/header/slideBox-3.jpg" alt=""/></li>
-					    </ul>
-					    <div class="spanBox" style = "height:20%;">
-					    	<span class="active" style = "width:180px;height:80px;background: none;margin-bottom: 10px"><img src="./images/header/slideBox-1.jpg" alt=""/></span>
-						    <span style = "width:180px;height:80px;background: none;margin-bottom: 10px"><img src="./images/header/slideBox-2.jpg" alt=""/></span>
-						    <span style = "width:180px;height:80px;background: none;margin-bottom: 10px"><img src="./images/header/slideBox-3.jpg" alt=""/></span>
+					<!-- 全景虚拟游 -->
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+						    <div  class="swiper-slide" style = "background: url(./images/header/slideBox-1.jpg) 100% 100% no-repeat;">1</div>
+						    <div class="swiper-slide" style = "background: url(./images/header/slideBox-2.jpg) 100% 100% no-repeat;">2</div>
+						    <div  class="swiper-slide" style = "background: url(./images/header/slideBox-3.jpg) 100% 100% no-repeat;">3</div>
 					    </div>
-					    <div class = "direction" style = "bottom:-340px;">
-					    	<div class="prev" style = "background: none;margin-left:90px;"><img src="./images/header/left_arrow.png" alt=""/></div>
-					    	<div class="next" style = "background: none;margin-right:90px;"><img src="./images/header/right_arrow.png"alt=""/></div>
+					    <div class="swiper-pagination">
+
 					    </div>
+					    <div class="swiper-button-prev"></div>
+					    <div class="swiper-button-next"></div>
 					</div>
 				
 				</div>
+
+
+
+
 			</div> 
 			<!-- 在线预订 -->
 			<div class = "zxdg" > 
@@ -192,7 +193,7 @@
 							<img src="./images/main/4-icon-3.png" alt="">
 						</div>
 					</div>
-					<div class = "OnlinePic" style = "width:720px;">
+					<div class = "OnlinePic" style = "width:57.5%;">
 						<img src="./images/main/4-pic1-4.png"  alt="">
 						<div>
 							<p>会议预订</p>
@@ -361,6 +362,7 @@
 		<div class = "fastChannel">
 				<p>快速通道</p>
 		</div>
+
 	</body>
 
 

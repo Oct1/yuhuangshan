@@ -45,24 +45,23 @@ $(function(){
       });
     });
     //左右按钮的控制效果
-    $(".next").stop(true,true).click(function (){
+    $(".next").stop().click(function (){
        sw++;
        if(sw==number.length){sw=0};
-       number.eq(sw).trigger("click");
+       number.eq(sw).stop().trigger("click");
     });
-    $(".prev").stop(true,true).click(function (){
+    $(".prev").stop().click(function (){
         sw--;
         if(sw==number.length){sw=0};
-        number.eq(sw).trigger("click");
+        number.eq(sw).stop().trigger("click");
         });
     //定时器的使用，自动开始
     timer = setInterval(function (){
         sw++;
         if(sw==number.length){sw=0};
-        number.eq(sw).trigger("click");
+        number.eq(sw).stop().trigger("click");
     },5000);
   }              
-  
   /**
    * 产业特色
    */
@@ -70,14 +69,18 @@ $(function(){
   let specialList = special.children('div'); 
   specialList.hover(function() {
     console.log("经过")
-    $(this).children('.specialImg').find('img').animate({"width":'140%',"height":"140%"});
+    $(this).children('.specialImg').find('img').stop().animate({"width":'140%',"height":"140%"});
   }, function() {
-    $(this).children('.specialImg').find('img').animate({"width":'110%',"height":"110%"});
+    $(this).children('.specialImg').find('img').stop().animate({"width":'110%',"height":"110%"});
   });
 
   //全景虚拟游---轮播图
- 
-
+   var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+    });    
   //在线预订
   let online = $(".online");
   let onlineList = online.children('.OnlinePic'); 
@@ -87,7 +90,5 @@ $(function(){
   }, function() {
     $(this).children('div').removeClass("onlineActive");
   });
-
-
 
 })

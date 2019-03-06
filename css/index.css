@@ -11,17 +11,17 @@ html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h
 .headerTop {
 	width:100%;
 	height:0;
-	padding-bottom: 15%;
+	padding-bottom: 10.5%;
 	background: url(../images/header/bg.png) no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
-	background-position: 0 20px;
+	background-position: 0 46 px;
 	display: relative;
 }
 
 /* logo */
 .logo {
-	width:  10%;
+	width:  7.5%;
 	margin: 0 auto;
 	line-height: 158px;
 }
@@ -34,24 +34,28 @@ html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h
 /* 小插件 */
 .widgets {
 	width: 20%;
-	height: 0;
-	padding-bottom: 3%;
 	position: absolute;
 	right: 8%;
 	top: 0;
 	background: yellowgreen;
 	display: flex;
 	min-width: 245px;
+	background: #0859CD;
+
 
 }
 
 /* 选择 */
 .topSelect {
+	 appearance:none;  
+  -moz-appearance:none;  
+  -webkit-appearance:none;  
+  border: solid 1px #000; 
+  background: url(../images/header/down.png) 85% 50%  no-repeat scroll transparent;
 	width: 50%;
-	height: 48px;
+	height: 10%;
 	line-height: 48px;
 	padding-left: 20px;
-	background: #0859CD;
 	border: none;
 	color: #fff;
 }
@@ -74,7 +78,7 @@ html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h
 }
 /* 天气 */
 .weather {
-	width: 120px;
+	width: 50%;
 	height: 48px;
 	line-height: 48px;
 	background: #5CC2D7;
@@ -84,11 +88,10 @@ html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h
 
 /* 导航样式 */ 
 .nav {
-	height: 65px;
+	height: 55px;
 	box-shadow:0 0 10px #cccccc;
 	background: url(../images/header/navBg.png) no-repeat center;
 	background-size: 100% 80%;
-	min-width: 1240px;
 }
 
 
@@ -96,23 +99,21 @@ html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h
 .nav>ul {
 	width: 100%;
 	display: flex;
-	height:65px;
-	line-height: 65px;
+	height:55px;
+	line-height: 55px;
 	justify-content: center;
 	
 }
 
 .nav>ul li{
-	padding:0 15px 0 15px;                                 
+	padding:0 32px;                                 
 	font-size: 14px;            
-	font-weight: bold;
 	list-style-type:none;
 }
 
 .nav > ul li > a{
 	text-decoration:none;
-	font-family: FZDBSJW--GB1-0;
-	font-size: 18px;
+	font-size: 15px;
 	color: #231815;
 }
 
@@ -121,7 +122,6 @@ html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h
 }
 
 /* 轮播图样式 */
-
 ul {
     list-style:none;
 }
@@ -147,7 +147,7 @@ ul {
 
 .slideBox ul li > img{
   width: 100%; 
-}
+} 
 
 
 /* 轮播图下的点圆 */
@@ -217,6 +217,13 @@ ul {
 	height: 30px;
 }
 
+.swiper-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+}  
+
+
 /* main部分css样式 */
 
 /* 产业特色顶部 */
@@ -227,7 +234,7 @@ ul {
 
 .cytsTopBg {
 	width:100%;
-	height: 175px;
+	height: 244px;
 	background: url(../images/main/1-topBg.png) no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
@@ -237,9 +244,9 @@ ul {
 }
 
 .cytsTitle {
-	width: 265px;
-	height: 86px;
-	line-height: 86px;
+	width: 240px;
+	height: 75px;
+	line-height: 75px;
 	background: url(../images/titleBg.png) no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
@@ -336,7 +343,7 @@ ul {
 
 .wzxzTopBg {
 	width:100%;
-	height: 175px;
+	height: 274px;
 	background: url(../images/main/2-topBg.png) no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
@@ -346,9 +353,9 @@ ul {
 }
 
 .wzxzTitle {
-	width: 265px;
-	height: 86px;
-	line-height: 86px;
+	width: 240px;
+	height: 75px;
+	line-height: 75px;
 	background: url(../images/titleBg.png) no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
@@ -381,16 +388,16 @@ ul {
 
 .qjxnyTopBg {
 	width:100%;
-	height: 175px;
+	height: 211px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .qjxnyTitle {
-	width: 265px;
-	height: 86px;
-	line-height: 86px;
+	width: 240px;
+	height: 75px;
+	line-height: 75px;
 	background: url(../images/titleBg.png) no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
@@ -410,13 +417,30 @@ ul {
 	overflow: hidden;
 }
 /* 全景轮播 */
-.spanBox span img{
-	width: 100%;
+.swiper-container {
+  width: 100%;
+  height: 80%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
-.slideBox .spanBox .active img{
-  border:solid 1px red;
-}
 
 
 /* 在线预订 */
@@ -432,16 +456,16 @@ ul {
 
 .zxdgTopBg {
 	width:100%;
-	height: 175px;
+	height: 226px;
 	display: flex;
-	justify-content: center;
+	justify-content: center; 
 	align-items: center;
 }
 
 .zxdgTitle {
-	width: 265px;
-	height: 86px;
-	line-height: 86px;
+	width: 240px;
+	height: 75px;
+	line-height: 75px;
 	background: url(../images/titleBg.png) no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
@@ -453,7 +477,7 @@ ul {
 }
 
 .online {
-	width: 1160px;
+	width: 80%;
 	height: 810px;
 	margin: 0 auto;
 	/* background-color: honeydew; */
@@ -466,11 +490,12 @@ ul {
 
 .OnlinePic {
 	position: relative;
-	width:350px;
-	height: 350px;
+	width:28%;
+	height: 41%;
 	margin-right: 20px;
 	border: none;
 }
+
 
 .OnlinePic > img{
 	width:100%;
@@ -482,14 +507,14 @@ ul {
 	bottom: 0;
 	width:100%;
 	height: 60px;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.6);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 
 }
 .OnlinePic > div > p{
 	margin-left:  35px;
-	width: 300px;
+	width: 100%;
 	height: 60px;
 	font-family: MicrosoftYaHei;
 	font-size: 20px;
@@ -508,12 +533,19 @@ ul {
 	justify-content:center;
 	align-items:center;
 	flex-direction: column-reverse;
+	text-align: center;
+	transition: all 0.2s;
+
+}
+.OnlinePic .onlineActive img{
+	margin-right: 0px;
+
 }
 
 .OnlinePic .onlineActive >p{
 	color: #D86200;
 	display: block;
-	margin-left: 180px;
+	margin-left: 0px;
 }
 
 
@@ -526,7 +558,7 @@ ul {
 
 .firendLink {
 	height: 300px; 	
-	background-color: #d5d5d5;
+	background-color: #F0F0F0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -561,16 +593,16 @@ ul {
 /* 网站信息 */
 
 .information {
-	height: 360px;
+	height: 367px;
 	background-color: #313131;
 	position: relative;
 	left: 0px;
-	padding-top: 60px;
+	display: flex;
 }
 
 .companyInfo{
 	width: 50%;
-	position: absolute;
+	margin-top: 65px;
 
 
 }
@@ -582,12 +614,12 @@ ul {
 }
 
 .companyInfo .Info{
-	margin-bottom: 80px;
+	margin-bottom: 78px;
 }
 
 .companyInfo .Info li {
-	height: 50px;
-	line-height: 50px;
+	height: 20px;
+	line-height: 20px;
 }
 
 
@@ -653,8 +685,7 @@ ul {
 /* 更多资讯信息 */
 .about {
 	width: 50%;
-	position: absolute;
-	right: 0px;
+	margin-top: 65px;
 
 }
 
@@ -667,17 +698,22 @@ ul {
 	width: 100px;
 }
 
+.about > ul li >dl dt {
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
 
+.about > ul li >dl dd {
+	margin-bottom: 13px;
+}
 
 .about > ul li >dl dt > a {
 	width: 600px;
-	height: 17px;
 	font-family: MicrosoftYaHei;
 	font-size: 16px;
-	line-height: 36px;
 	color: #ffffff;
 	text-decoration:none;
-	margin-bottom: 20px;
 }
 
 .about > ul li >dl dd > a{

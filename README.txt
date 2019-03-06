@@ -17,7 +17,7 @@
 
 ##浏览器同步
 	-npm install -g browser-sync
-	-browser-sync start --server --files "css/*.css，js.*/js,*.html"
+	-browser-sync start --server --files "css/*.css,js.*/js,*.html"
 
 
 ##自适应采用padding-bottom 
