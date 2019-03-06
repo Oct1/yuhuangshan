@@ -116,7 +116,7 @@ html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h
 	color: #231815;
 }
 
-.navActive {
+.nav > ul li > .navActive {
 	color: #7C4D1E;
 }
 
