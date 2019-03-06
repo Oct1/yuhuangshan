@@ -748,6 +748,7 @@ ul {
 
 
 @media only screen and (max-width:1680px ) {
+	/*在线预定*/
 	.online {
 		height: 70%;
 	}
@@ -782,6 +783,11 @@ ul {
 }
 
 @media only screen and (max-width:1440px ) {
+	/*导航*/
+	.nav>ul li{
+		padding:0 25px;                                 
+	}
+	/*在线预定*/
 	.online {
 		height: 65%;
 	}
@@ -825,7 +831,10 @@ ul {
 }
 
 @media only screen and (max-width:1240px ) {
-
+	/*导航*/
+	.nav>ul li{
+		padding:0 16px;                                 
+	}
 
 	/* 产业特色*/
 	.mainSpecial > div {
@@ -873,6 +882,12 @@ ul {
 
 
 @media only screen and (max-width:1024px ) {
+
+		/*导航*/
+	.nav>ul li{
+		padding:0 8px;                                 
+	}
+	/*在线预定*/
 	.online {
 		height: 60%;
 	}
@@ -948,27 +963,6 @@ ul {
 		height: 80px;
 		font-size: 10px;
 		line-height: 22px;
-	}
-
-		/*友情链接*/
-	.firendLinkTitle {
-		width: 650px;
-	}
-	.link {
-		width: 650px;
-	}
-
-	/*信息*/
-	.companyInfo .Info,.Info1,.Info2{
-			margin-left: 5px;
-
-	}
-	.Info1 li h3{
-		font-size: 24px;
-	}
-
-	.companyInfo .Info li > a{
-		padding: 0 20px;
 	}
 	
 }
