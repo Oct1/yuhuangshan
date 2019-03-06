@@ -147,6 +147,7 @@ ul {
 
 .slideBox ul li > img{
   width: 100%; 
+  height:100%;
 } 
 
 
@@ -266,7 +267,7 @@ ul {
 
 .mainSpecial > div {
 	width:  20%;
-	height: 600px;
+	height: 700px;
 	background-color: yellowgreen;
 
 }
@@ -302,9 +303,7 @@ ul {
 	height: 154px;
 	font-family: MicrosoftYaHei;
 	font-size: 36px;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 42px;
+	line-height: 36px;
 	letter-spacing: 4px;
 	color: #ffffff;
 }
@@ -491,7 +490,7 @@ ul {
 .OnlinePic {
 	position: relative;
 	width:28%;
-	height: 41%;
+	height: 47%;
 	margin-right: 20px;
 	border: none;
 }
@@ -547,6 +546,8 @@ ul {
 	display: block;
 	margin-left: 0px;
 }
+
+
 
 
 /* footer 部分css 样式 */
@@ -641,16 +642,12 @@ ul {
 }
 
 .Info1 {
-	width: 80%;
 	height: 30px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	margin-bottom: 25px;
 }
 
-.Info1 li{
-	width: 100%;
-}
 
 .Info1 li h3{
 	height: 20px;
@@ -747,4 +744,231 @@ ul {
 	color: #ebe6db;
 	margin: 20px auto;
 
+}
+
+
+@media only screen and (max-width:1680px ) {
+	.online {
+		height: 70%;
+	}
+	.zxdg {
+		height: 900px;
+	} 
+	/* 产业特色*/
+	.mainSpecial > div {
+    height: 620px;
+	}
+	.specialBg {
+		top:  36px;
+		right : 42px;
+		width: 60px;
+		height: 200px;
+	}
+
+	.specialBg p {
+		width: 30px;
+		height: 150px;
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	/*友情链接*/
+	.firendLinkTitle {
+		width: 950px;
+	}
+	.link {
+		width: 950px;
+	}
+}
+
+@media only screen and (max-width:1440px ) {
+	.online {
+		height: 65%;
+	}
+	.zxdg {
+		height: 800px;
+	} 
+		/* 产业特色*/
+	.mainSpecial > div {
+    height: 560px;
+	}
+	
+	.mainSpecial {
+		height: 560px;
+	}
+
+	.specialBg {
+		top:  36px;
+		right : 42px;
+		width: 50px;
+		height: 180px;
+	}
+
+	.specialBg p {
+		width: 25px;
+		height: 150px;
+		font-size: 24px;
+	}
+
+		/*友情链接*/
+	.firendLinkTitle {
+		width: 850px;
+	}
+	.link {
+		width: 850px;
+	}
+	/*信息*/
+	.companyInfo .Info,.Info1,.Info2{
+			margin-left: 120px;
+
+	}
+}
+
+@media only screen and (max-width:1240px ) {
+
+
+	/* 产业特色*/
+	.mainSpecial > div {
+    height: 480px;
+	}
+	.mainSpecial {
+		height: 480px;
+	}
+	.specialBg {
+		width: 50px;
+		height: 140px;
+	}
+
+	.specialBg p {
+		width: 15px;
+		height: 90px;
+		font-size: 14px;
+		line-height: 25px;
+	}
+
+	/*友情链接*/
+	.firendLinkTitle {
+		width: 750px;
+	}
+	.link {
+		width: 750px;
+	}
+		/*信息*/
+	.companyInfo .Info,.Info1,.Info2{
+			margin-left: 40px;
+
+	}
+	.Info1 li h3{
+		font-size: 24px;
+	}
+
+	.Info1 li h3 span{
+		font-size: 12px;
+	}
+	
+	.Info2 li p{
+		font-size: 10px;
+	}
+}
+
+
+@media only screen and (max-width:1024px ) {
+	.online {
+		height: 60%;
+	}
+	.zxdg {
+		height: 700px;
+	} 
+
+	/* 产业特色*/
+	.mainSpecial > div {
+    height: 400px;
+	}
+	.mainSpecial {
+		height: 400px;
+	}
+	.specialBg {
+		top:  36px;
+		right : 42px;
+		width: 40px;
+		height: 120px;
+	}
+
+	.specialBg p {
+		width: 10px;
+		height: 80px;
+		font-size: 10px;
+		line-height: 22px;
+	}
+
+		/*友情链接*/
+	.firendLinkTitle {
+		width: 650px;
+	}
+	.link {
+		width: 650px;
+	}
+
+	/*信息*/
+	.companyInfo .Info,.Info1,.Info2{
+			margin-left: 5px;
+
+	}
+	.Info1 li h3{
+		font-size: 24px;
+	}
+	
+}
+
+
+@media only screen and (max-width:800px ) {
+	.online {
+		height: 60%;
+	}
+	.zxdg {
+		height: 700px;
+	} 
+
+	/* 产业特色*/
+	.mainSpecial > div {
+    height: 400px;
+	}
+	.mainSpecial {
+		height: 400px;
+	}
+	.specialBg {
+		top:  36px;
+		right : 42px;
+		width: 40px;
+		height: 120px;
+	}
+
+	.specialBg p {
+		width: 10px;
+		height: 80px;
+		font-size: 10px;
+		line-height: 22px;
+	}
+
+		/*友情链接*/
+	.firendLinkTitle {
+		width: 650px;
+	}
+	.link {
+		width: 650px;
+	}
+
+	/*信息*/
+	.companyInfo .Info,.Info1,.Info2{
+			margin-left: 5px;
+
+	}
+	.Info1 li h3{
+		font-size: 24px;
+	}
+
+	.companyInfo .Info li > a{
+		padding: 0 20px;
+	}
+	
 }
