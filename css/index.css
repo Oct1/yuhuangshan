@@ -15,7 +15,7 @@ html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h
 	background: url(../images/header/bg.png) no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
-	background-position: 0 46 px;
+	background-position: 0 46px;
 	display: relative;
 }
 
@@ -121,11 +121,10 @@ html, body, div, img, a, ul, ol, li, dl, dt, dd, p, span, input, cite, h1, h2, h
 	color: #7C4D1E;
 }
 
-/* 轮播图样式 */
-ul {
-    list-style:none;
-}
 
+/* 轮播图样式 */
+
+/* swiper轮播图 */
 .slideBox {
   margin:0 auto;
   width:100%;
@@ -134,7 +133,100 @@ ul {
   border: none;
 }
 
-.slideBox ul {
+.lunbotu {
+	height: 100%;
+}
+
+.swiper1,.swiper1 .swiper-wrapper{
+	height: 100%;
+	background-color: #fff;
+	display: flex;
+	height: 0;
+	padding-bottom: 24%; 
+}
+
+.swiper1 {
+  width: 100%;
+  height: 80%;
+}
+
+.swiper1 .swiper-wrapper .swiper-slide {
+	align-items: flex-start;
+}
+.swiper1 .swiper-wrapper .swiper-slide img{
+	width: 1920px;
+}
+
+.swiper-pagination1 {
+	height: 6.5%;
+	bottom: 0px;
+  	background-color: #D3D3D4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+	height: 15px;
+	width: 15px;
+	margin: 0 15px;
+	background: #fff;
+	opacity: 1;
+}
+
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active {
+	background: #A6882B;
+}
+
+.swiper1 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+	left: 5%;
+}
+
+.swiper1 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+	right: 5%;
+}
+
+@media only screen and (max-width:1680px ) {
+	.swiper1 .swiper-wrapper .swiper-slide img{
+		width: 1680px;
+
+	}
+
+}
+
+@media only screen and (max-width:1440px ) {
+	.swiper1 .swiper-wrapper .swiper-slide img{
+		width: 1440px;
+
+	}
+
+}
+
+@media only screen and (max-width:1280px ) {
+	.swiper1 .swiper-wrapper .swiper-slide img{
+		width: 1280px;
+	}
+
+}
+
+@media only screen and (max-width:1024px ) {
+	.swiper1 .swiper-wrapper .swiper-slide img{
+		width: 1040px;
+	}
+
+}
+
+
+
+/* 自写轮播图 */
+/* ul {
+    list-style:none;
+} */
+
+
+
+/* .slideBox ul {
   position:relative;
   display: flex
 }
@@ -148,11 +240,11 @@ ul {
 .slideBox ul li > img{
   width: 100%; 
   height:100%;
-} 
+}  */
 
 
 /* 轮播图下的点圆 */
-.spanBox {
+/* .spanBox {
   width: 100%;
   height: 50px;
   background-color: #D3D3D4;
@@ -175,19 +267,22 @@ ul {
   border:solid 1px #BEEBEC;
   border-radius:4px;
   border-radius: 18px;
-}
+} */
 
 /* 轮播图控制按钮 */
-.direction{
+/* .direction{
 	position: absolute;
 	top: 35%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
+
+
+
 /* 上一张 */
-.prev {
+/* .prev {
   width: 82px;
 	height: 123px;
   background-color: rgba(255,255,255,0.2);
@@ -200,9 +295,9 @@ ul {
 	width: 20px;
 	height: 30px;
 
-}
+} */
 /* 下一张 */
-.next {
+/* .next {
   float:right;
   width: 82px;
 	height: 123px;
@@ -223,6 +318,8 @@ ul {
     height: 0;
     padding-bottom: 50%;
 }  
+ */
+
 
 
 /* main部分css样式 */
@@ -334,6 +431,8 @@ ul {
 
 /* 玩转小镇 */
 
+
+
 /* 产业特色顶部 */
 .wzxz {
 	width: 100%;
@@ -365,12 +464,9 @@ ul {
 	color: #e60012;
 }
 
-.mainArea {
+.mainArea img{
 	width: 100%;
-	height:  960px;
-	background: url(../images/main/2-pic.png) no-repeat;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
+
 }
 
 
@@ -378,7 +474,7 @@ ul {
 
 .qjxny {
 	width: 100%;
-	height: 1072px;
+	height: 1200px;
 	position: relative;
 	background: url(../images/main/3-Bg.jpg) no-repeat;
 	-webkit-background-size: 100% 100%;
@@ -409,37 +505,112 @@ ul {
 
 .mainView {
 	width: 80%;
-	height: 800px;
+	height: 900px;
 	margin: 0 auto;
-	background-color: honeydew;
+	background-color: #fff;
 	border-radius: 10px;
 	overflow: hidden;
 }
 /* 全景轮播 */
-.swiper-container {
-  width: 100%;
-  height: 80%;
+
+.container {
+	height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
+
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+    background-size: cover;
+    background-position: center;
 }
 
+.gallery-top-box {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gallery-thumbs-box {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 5%;
+}
+
+.gallery-top-box .swiper-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-thumbs-box .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+	left: 15%;
+	background-image: url(../images/main/left_arrow.png);
+}
+
+.gallery-thumbs-box .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+	right:15%;
+	background-image: url(../images/main/right_arrow.png);
+
+}
+
+
+
+.gallery-thumbs {
+	width: 60%;
+    height: 120px;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+
+.gallery-thumbs .swiper-slide {
+    height: 100%;
+    opacity: 0.4;
+    margin: 10px;
+}
+
+
+.gallery-thumbs .swiper-slide img{
+    height: 100%;
+
+}
+
+.gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+}
+
+
+@media only screen and (max-width:1680px ) {
+	.gallery-thumbs .swiper-slide {
+	    height: 85%;
+	}
+	.mainView {
+		height: 800px;
+	}
+}
+
+@media only screen and (max-width:1440px ) {
+	.gallery-thumbs .swiper-slide {
+	    height: 75%;
+	}
+	.mainView {
+		height: 700px;
+	}
+}
+
+@media only screen and (max-width:1280px ) {
+	.gallery-thumbs .swiper-slide {
+	    height: 65%;
+	}
+}
+
+@media only screen and (max-width:1024px ) {
+	.gallery-thumbs .swiper-slide {
+	    height: 55%;
+	}
+
+}
 
 
 /* 在线预订 */
@@ -773,6 +944,14 @@ ul {
 		line-height: 36px;
 	}
 
+	/*  全景虚拟游 */
+	.qjxny {
+		height: 1100px;
+	} 
+	.mainView {
+		width: 80%;
+		height: 800px;
+	}
 	/*友情链接*/
 	.firendLinkTitle {
 		width: 950px;
@@ -815,6 +994,14 @@ ul {
 		height: 150px;
 		font-size: 24px;
 	}
+	/*  全景虚拟游 */
+	.qjxny {
+		height: 1020px;
+	} 
+	.mainView {
+		width: 80%;
+		height: 720px;
+	}
 
 		/*友情链接*/
 	.firendLinkTitle {
@@ -830,7 +1017,7 @@ ul {
 	}
 }
 
-@media only screen and (max-width:1240px ) {
+@media only screen and (max-width:1280px ) {
 	/*导航*/
 	.nav>ul li{
 		padding:0 16px;                                 
@@ -862,6 +1049,15 @@ ul {
 	.link {
 		width: 750px;
 	}
+	/*  全景虚拟游 */
+	.qjxny {
+		height: 980px;
+	} 
+	.mainView {
+		width: 80%;
+		height: 680px;
+	}
+
 		/*信息*/
 	.companyInfo .Info,.Info1,.Info2{
 			margin-left: 40px;
@@ -924,15 +1120,44 @@ ul {
 		width: 650px;
 	}
 
+	/*  全景虚拟游 */
+	.qjxny {
+		height: 900px;
+	} 
+	.mainView {
+		width: 80%;
+		height: 600px;
+	}
 	/*信息*/
 	.companyInfo .Info,.Info1,.Info2{
-			margin-left: 5px;
+			margin-left: 20px;
 
 	}
+	.companyInfo .Info li > a{
+		font-size: 10px;
+	}
+
 	.Info1 li h3{
-		font-size: 24px;
+		font-size: 17px;
+	}
+
+	.Info1 li h3 span{
+		font-size: 10px;
 	}
 	
+	.Info2 li {
+		width: 80%;
+	}
+	.about > ul li >dl dt > a {
+		font-size: 12px;	
+	}
+
+	.about > ul li >dl dd > a{
+		font-size: 10px;
+	}	
+	.about > ul li {
+	    width: 82px;
+	}
 }
 
 
@@ -964,5 +1189,7 @@ ul {
 		font-size: 10px;
 		line-height: 22px;
 	}
+
+
 	
 }
